@@ -1,0 +1,92 @@
+{
+  "_comment": "Datos de prueba. Contiene inconsistencias INTENCIONALES documentadas en el README: r-002 usa formato DD/MM/YYYY, r-003 es ISO sin zona horaria, r-006 no tiene fecha, u-diana no tiene plan.",
+  "users": [
+    { "id": "u-ana", "name": "Ana García", "plan": "standard" },
+    { "id": "u-carlos", "name": "Carlos Ruiz", "plan": "premium" },
+    { "id": "u-diana", "name": "Diana López" }
+  ],
+  "services": [
+    {
+      "id": "svc-corte",
+      "name": "Corte de cabello",
+      "duration_minutes": 30,
+      "price": 40000,
+      "professional_id": "p-laura",
+      "non_refundable": false
+    },
+    {
+      "id": "svc-tinte",
+      "name": "Tinte completo",
+      "duration_minutes": 90,
+      "price": 150000,
+      "professional_id": "p-laura",
+      "non_refundable": false
+    },
+    {
+      "id": "svc-masaje",
+      "name": "Masaje deportivo",
+      "duration_minutes": 60,
+      "price": 90000,
+      "professional_id": "p-mario",
+      "non_refundable": false
+    },
+    {
+      "id": "svc-spa",
+      "name": "Día de spa (promoción)",
+      "duration_minutes": 120,
+      "price": 200000,
+      "professional_id": "p-mario",
+      "non_refundable": true
+    }
+  ],
+  "reservations": [
+    {
+      "id": "r-001",
+      "user_id": "u-ana",
+      "service_id": "svc-corte",
+      "start": "2026-06-19T10:00:00-05:00",
+      "status": "active"
+    },
+    {
+      "id": "r-002",
+      "user_id": "u-ana",
+      "service_id": "svc-masaje",
+      "start": "23/06/2026 14:30",
+      "status": "active"
+    },
+    {
+      "id": "r-003",
+      "user_id": "u-carlos",
+      "service_id": "svc-spa",
+      "start": "2026-06-20T09:00:00",
+      "status": "active"
+    },
+    {
+      "id": "r-004",
+      "user_id": "u-carlos",
+      "service_id": "svc-tinte",
+      "start": "2026-05-28T11:00:00-05:00",
+      "status": "active"
+    },
+    {
+      "id": "r-005",
+      "user_id": "u-diana",
+      "service_id": "svc-corte",
+      "start": "2026-06-26T16:00:00-05:00",
+      "status": "cancelled"
+    },
+    {
+      "id": "r-006",
+      "user_id": "u-ana",
+      "service_id": "svc-tinte",
+      "status": "active"
+    },
+    {
+      "id": "r-007",
+      "user_id": "u-carlos",
+      "service_id": "svc-corte",
+      "start": "2026-06-24T08:00:00-05:00",
+      "status": "active"
+    }
+  ]
+}
